@@ -201,6 +201,7 @@ def get_model(
             )
 
     if model_type in ["RefinedWeb", "RefinedWebModel", "falcon"]:
+        trust_remote_code = True
         if sharded:
             if FLASH_ATTENTION:
                 if config_dict.get("alibi", False):

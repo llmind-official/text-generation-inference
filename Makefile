@@ -43,7 +43,10 @@ python-client-tests:
 python-tests: python-server-tests python-client-tests
 
 run-falcon-7b-instruct:
-	text-generation-launcher --model-id tiiuae/falcon-7b-instruct --port 8080
+	text-generation-launcher --model-id tiiuae/falcon-7b-instruct --port 6006
+
+run-llama2-13b-hf:
+	text-generation-launcher --model-id meta-llama/Llama-2-13b-hf --port 6006 
 
 run-falcon-7b-instruct-quantize:
 	text-generation-launcher --model-id tiiuae/falcon-7b-instruct --quantize bitsandbytes --port 8080
