@@ -1,4 +1,5 @@
 .idea
 target
+notes.txt
 router/tokenizer.json
 *__pycache__*

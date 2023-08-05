@@ -48,6 +48,15 @@ run-falcon-7b-instruct:
 run-llama2-13b-hf:
 	text-generation-launcher --model-id meta-llama/Llama-2-13b-hf --port 6006 
 
+run-llama2-7b-hf:
+	text-generation-launcher --model-id meta-llama/Llama-2-7b-hf --port 6006 
+
+run-llama2-7b-chat-hf:
+  text-generation-launcher --model-id meta-llama/Llama-2-7b-chat-hf --port 6006
+
+run-llama2-13b-chat-hf:
+  text-generation-launcher --model-id meta-llama/Llama-2-13b-chat-hf --port 6006
+
 run-falcon-7b-instruct-quantize:
 	text-generation-launcher --model-id tiiuae/falcon-7b-instruct --quantize bitsandbytes --port 8080
 
