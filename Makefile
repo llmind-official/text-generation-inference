@@ -42,8 +42,8 @@ python-client-tests:
 
 python-tests: python-server-tests python-client-tests
 
-run-falcon-7b-instruct:
-	text-generation-launcher --model-id tiiuae/falcon-7b-instruct --port 6006
+run-rhino:
+	text-generation-launcher --model-id adypd/rhino-v0 --port 6006
 
 run-llama2-13b-chat-hf:
 	text-generation-launcher --model-id meta-llama/Llama-2-13b-chat-hf --port 6006 
