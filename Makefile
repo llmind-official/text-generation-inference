@@ -43,7 +43,7 @@ python-client-tests:
 python-tests: python-server-tests python-client-tests
 
 run-rhino:
-	text-generation-launcher --model-id adypd/rhino-v0 --port 6006
+	text-generation-launcher --model-id adypd/rhino-v0 --port 6006 --max_total_tokens 4096 --max-input-length 3584
 
 run-llama2-13b-chat-hf:
 	text-generation-launcher --model-id meta-llama/Llama-2-13b-chat-hf --port 6006 
